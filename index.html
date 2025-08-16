@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salão de Beleza Fátima Silva</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-pink-50 text-gray-800">
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <header class="bg-pink-600 text-white shadow-lg">
+      <div
+        class="max-w-7xl mx-auto px-4 flex justify-between items-center py-4"
+      >
+        <h1 class="text-2xl font-bold">Fátima Silva</h1>
+
+        <!-- Botão Hamburguer -->
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <!-- Ícone -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+
+        <!-- Menu Desktop -->
+        <nav class="hidden md:flex space-x-4">
+          <a href="#servicos" class="hover:underline">Serviços</a>
+          <a href="#localizacao" class="hover:underline">Localização</a>
+          <a href="#funcionarias" class="hover:underline">Equipe</a>
+          <a href="#contato" class="hover:underline">Contato</a>
+        </nav>
+      </div>
+
+      <!-- Menu Mobile -->
+      <div id="mobile-menu" class="md:hidden hidden bg-pink-500 px-4 pb-4">
+        <a href="#servicos" class="block py-2 hover:underline">Serviços</a>
+        <a href="#localizacao" class="block py-2 hover:underline"
+          >Localização</a
+        >
+        <a href="#funcionarias" class="block py-2 hover:underline">Equipe</a>
+        <a href="#contato" class="block py-2 hover:underline">Contato</a>
+      </div>
+    </header>
+
+    <!-- Conteúdo do site aqui -->
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+
+    <!-- Hero Banner -->
+    <section class="bg-pink-100 py-16 text-center">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-4xl font-bold text-pink-700 mb-4">
+          Beleza e cuidado que você merece
+        </h2>
+        <p class="text-lg text-gray-700 mb-6">
+          Tratamentos capilares, manicure e pedicure com atendimento
+          especializado
+        </p>
+        <a
+          href="#contato"
+          class="bg-pink-600 text-white px-6 py-3 rounded-full shadow hover:bg-pink-700 transition"
+          >Agende seu horário</a
+        >
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="py-16 max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-pink-700 mb-8 text-center">
+        💇‍♀️ Nossos Serviços
+      </h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow p-5 text-center">
+          <img
+            src="https://via.placeholder.com/300x200"
+            alt="Tratamento Capilar"
+            class="rounded mb-4 mx-auto"
+          />
+          <h3 class="text-xl font-semibold text-pink-600">
+            Tratamento Capilar
+          </h3>
+          <p class="mt-2 text-gray-600">
+            Hidratação, reconstrução e cuidados para todos os tipos de cabelo.
+          </p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-5 text-center">
+          <img
+            src="https://via.placeholder.com/300x200"
+            alt="Manicure"
+            class="rounded mb-4 mx-auto"
+          />
+          <h3 class="text-xl font-semibold text-pink-600">Manicure</h3>
+          <p class="mt-2 text-gray-600">
+            Design moderno e cuidados especiais para suas unhas.
+          </p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-5 text-center">
+          <img
+            src="https://via.placeholder.com/300x200"
+            alt="Pedicure"
+            class="rounded mb-4 mx-auto"
+          />
+          <h3 class="text-xl font-semibold text-pink-600">Pedicure</h3>
+          <p class="mt-2 text-gray-600">
+            Bem-estar e estética para os seus pés.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Localização -->
+    <section id="localizacao" class="py-16 bg-pink-100">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-pink-700 mb-6 text-center">
+          📍 Onde Estamos
+        </h2>
+        <iframe
+          src="COLE_AQUI_SEU_MAPA"
+          class="w-full h-96 border-0 rounded-lg shadow"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Equipe -->
+    <section id="funcionarias" class="py-16 max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-pink-700 mb-8 text-center">
+        👩‍💼 Nossa Equipe
+      </h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow text-center">
+          <img
+            src="https://via.placeholder.com/200"
+            alt="Fátima Silva"
+            class="rounded-full w-32 h-32 mx-auto mb-4"
+          />
+          <h3 class="text-xl font-semibold">Fátima Silva</h3>
+          <p class="text-gray-600">
+            Especialista em coloração e cortes modernos.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow text-center">
+          <img
+            src="https://via.placeholder.com/200"
+            alt="Maria Souza"
+            class="rounded-full w-32 h-32 mx-auto mb-4"
+          />
+          <h3 class="text-xl font-semibold">Maria Souza</h3>
+          <p class="text-gray-600">
+            Manicure & Pedicure com 10 anos de experiência.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow text-center">
+          <img
+            src="https://via.placeholder.com/200"
+            alt="Ana Lima"
+            class="rounded-full w-32 h-32 mx-auto mb-4"
+          />
+          <h3 class="text-xl font-semibold">Ana Lima</h3>
+          <p class="text-gray-600">
+            Expert em tratamentos capilares e alisamentos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="py-16 bg-pink-50">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-pink-700 mb-8 text-center">
+          💬 O que Nossas Clientes Dizem
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow">
+            <p class="text-gray-600">
+              "Atendimento impecável, saí me sentindo renovada!"
+            </p>
+            <span class="block mt-4 font-semibold text-pink-600">— Carla</span>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <p class="text-gray-600">
+              "O melhor salão da cidade, recomendo para todas minhas amigas."
+            </p>
+            <span class="block mt-4 font-semibold text-pink-600"
+              >— Juliana</span
+            >
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <p class="text-gray-600">
+              "Profissionais incríveis e ambiente super agradável."
+            </p>
+            <span class="block mt-4 font-semibold text-pink-600">— Renata</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-16 max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-pink-700 mb-8 text-center">
+        📞 Entre em Contato
+      </h2>
+      <form class="bg-white p-6 rounded-lg shadow grid gap-4">
+        <input
+          type="text"
+          placeholder="Seu nome"
+          class="border rounded px-4 py-2"
+        />
+        <input
+          type="email"
+          placeholder="Seu email"
+          class="border rounded px-4 py-2"
+        />
+        <textarea
+          placeholder="Sua mensagem"
+          class="border rounded px-4 py-2"
+        ></textarea>
+        <button
+          type="submit"
+          class="bg-pink-600 text-white py-2 px-6 rounded hover:bg-pink-700 transition"
+        >
+          Enviar
+        </button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-pink-600 text-white py-6 mt-10">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <p>
+          &copy; 2025 Salão de Beleza Fátima Silva — Todos os direitos
+          reservados
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
